@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <h1 class="text-5xl text-center mt-6">Let's get some <span class="text-violet-800">Moooney!!!</span></h1>
+
+    <section class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+        <div class="bg-blue-400 rounded p-8 mt-10">
+            <h2 class="text-4xl">Deposit</h2>
+            <h2 class="text-3xl">$ <span class="depositTotal">00</span></h2>
+            <div class="deposit-input ">
+                <input class="mt-5 depositInput text-black p-2" type="number " placeholder="Enter the amount ">
+                <button class="border-solid	border-red-900	rounded	depositBtn">Deposit</button>
+            </div>
+        </div>
+        <div class="bg-lime-400 rounded p-8 mt-10">
+            <h2 class="text-4xl">Withdraw</h2>
+            <h2 class="text-3xl">$ <span class="withdrawTotal">00</span></h2>
+            <div class="withdraw-input">
+                <input class="mt-5 withdrawInput p-2" type="number" placeholder="Enter the amount ">
+                <button class="border-solid	border-red-900	rounded	withdrawbtn">withdraw</button>
+            </div>
+        </div>
+        <div class="bg-red-400 rounded p-8 mt-10">
+            <h2 class="text-4xl">Balance</h2>
+            <h2 class="text-3xl">$ <span class="balanceTotal">00</span> </h2>
+        </div>
+        
+    </section>
+    <script src="./js/banking.js"></script>
+</body>
+</html>
